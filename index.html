@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rastro de Bobinas</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Material em Processo - Bobinas</h1>
+    <form id="form-bobina">
+
+      <div class="form-group">
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" />
+      </div>
+
+      <div class="form-group">
+        <label for="id-turno">Turno:</label>
+        <select id="id-turno" name="Turno">
+          <option value="1º Turno">1º Turno</option>
+          <option value="2º Turno">2º Turno</option>
+          <option value="3º Turno">3º Turno</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="id-registro-op">Registro Operador:</label>
+        <input type="text" id="id-registro-op" name="id-registro-op" />
+      </div>
+
+      <div class="form-group">
+        <label for="id-rastro">Rastro:</label>
+        <input type="text" id="id-rastro" name="id-rastro" />
+      </div>
+
+      <div class="form-group">
+        <label for="id-Linha">Linha:</label>
+        <select id="id-Linha" name="Linha">
+          <option value="01">01</option>
+          <option value="02">02</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="id-parede">Parede:</label>
+        <select id="id-parede" name="Parede">
+          <option value="Simples">Simples</option>
+          <option value="Zincado">Zincado</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="id-Diametro">Diâmetro:</label>
+        <select id="id-Diametro" name="Diametro">
+          <option value="4,00">4,00</option>
+          <option value="4,76">4,76</option>
+          <option value="6,35">6,35</option>
+          <option value="7,94">7,94</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="id-Peso">Peso:</label>
+        <input type="text" id="id-Peso" name="id-Peso" />
+      </div>
+
+      <div class="form-group">
+        <label for="id-Comprimento">Comprimento:</label>
+        <input type="text" id="id-Comprimento" name="id-Comprimento" />
+      </div>
+
+      <div class="form-group">
+        <label for="laudo">Laudo:</label>
+        <input type="text" id="laudo" name="laudo" disabled placeholder="Aguardando análise" />
+      </div>
+
+      <div class="form-group">
+        <label for="op2">OP2 - Conformação:</label>
+        <input type="text" id="op2" name="op2" disabled placeholder="Aguardando conclusão" />
+      </div>
+
+      <div class="form-group">
+        <label for="op3">OP3 - Estanqueidade:</label>
+        <input type="text" id="op3" name="op3" disabled placeholder="Aguardando teste" />
+      </div>
+
+      <div class="form-group">
+        <label for="op4">OP4 - Inspeção de Qualidade:</label>
+        <input type="text" id="op4" name="op4" disabled placeholder="Aguardando inspeção" />
+      </div>
+
+        <button type="submit">Adicionar Bobina</button>
+
+    </form>
+
+        <h2>Bobinas Salvas</h2>
+        <p>Total: <span id="total-bobinas">0</span></p>
+        <ul id="lista-bobinas"></ul>
+
+  </main>
+</body>
+</html>
